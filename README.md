@@ -1,4 +1,4 @@
-#Project Ocular Echo
+# Project Ocular Echo
 
 This is our entry for Cutie Hack IV at University of California Riverside. It is an Arduino-based detection system to assist the visually impaired. 
 Normally, canes can be used to assist in navigation of the visually impaired. While this works for obstacles below waist level, anything above waist level becomes harder to detect. 

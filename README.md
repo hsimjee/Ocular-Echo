@@ -9,7 +9,8 @@ While this works for obstacles below waist level, anything above waist level bec
 In countries that lack accommodations for the visually impaired, canes can only do so much. 
 Collisions with parked vehicles would occur as the user’s cane would go underneath a car or bus, giving the user false information and causing collision.
 
-For our demo, we have the device split into two separate systems. The original idea was to have one unit power both sensors, but due to limited options in regards to parts, we created two separate systems that can be 
+For our project, we have the device split into two separate systems. The original idea was to have one unit power both sensors, but due to limited options in regards to parts, we created two separate systems that can be mounted in various ways. Our project is not a replacement to assistive canes, but rather as an additional toolset for the visual impaired. 
+
 With the proper modules, we could have more accurate sensors that would provide feedback on environmental obstacles. 
 
 ## Design
@@ -18,7 +19,9 @@ The project is made up of:
 * Arduino
 * 2 motors
 * 2 ultrasonic sensors
-* 1 speaker
+* 2 Speakers
+* Transistors and wires
+* A whole lot of duct tape
 
 The Arduino handles the input from the ultrasonic sensors. It detects objects in a 30-degree cone. Once it detects something, the motor pulses to provide haptic feedback. 
 The speaker begins to emit a sound that increases in repetition, giving the user a sense of how far the object is from the user. 
@@ -34,6 +37,8 @@ We kept having an issue where the unit would get locked in a loop after operatin
 We also wanted to keep the form factor smaller so that it can remain portable, which was hard to do with our level of experience. 
 
 We had to compromise and use what we had access to. If we had smaller breadboards, we could have made the devices smaller. We also needed to draw power from a laptop as we did not have another battery pack.
+
+The device needs to be held in a certain way to maximize effectiveness.
 
 ## Future Ideas
 We could sell the setup as a kit in areas that do not have the proper infrastructure to assist the visually impaired. It would contain a rechargeable battery bank to power the unit, the microcontroller, sensors, motors, and wires. The battery bank and controller can attach to a belt or be placed in a pocket. The motors and sensors would be attached to the controller via wires. They would attach to the user with a Velcro band. 

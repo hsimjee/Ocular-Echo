@@ -9,7 +9,7 @@ While this works for obstacles below waist level, anything above waist level bec
 In countries that lack accommodations for the visually impaired, canes can only do so much. 
 Collisions with parked vehicles would occur as the user’s cane would go underneath a car or bus, giving the user false information and causing collision.
 
-For our demo, we have the device split into two septate systems. The original idea was to have one unit power both sensors, but due to limited options in regards to parts, we created two separate systems that can be 
+For our demo, we have the device split into two separate systems. The original idea was to have one unit power both sensors, but due to limited options in regards to parts, we created two separate systems that can be 
 With the proper modules, we could have more accurate sensors that would provide feedback on environmental obstacles. 
 
 ## Design

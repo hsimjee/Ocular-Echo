@@ -28,29 +28,25 @@ long calculateDistance(long newDistance){
 
 void trigger(long distance){
   if (distance < 20) {  // This is where the LED On/Off happens
-    tone(speaker, 1000, 500); 
-    digitalWrite(motor, HIGH);
-    delay(100);
-    digitalWrite(motor, LOW);
+    tone(speaker, 1000, 500);
+    delay(50);
   }
   else if(distance < 80){
     tone(speaker, 1000, 80);
-    digitalWrite(motor, HIGH);
-    delay(150);
-    digitalWrite(motor, LOW);
+    delay(125);
   }
   else if(distance < 160){
     tone(speaker, 1000, 10);
-    digitalWrite(motor, HIGH);
-    delay(170);
-    digitalWrite(motor, LOW);
+    delay(250);
   }
-  else{
-    return;
+  if(distance < 160){
+    digitalWrite(motor, HIGH);
+    delay(20);
+    digitalWrite(motor, LOW);
   }
 }
 
-void turnMotorsOff(){
+void turnMotorOff(){
   digitalWrite(motor, LOW);
 }
 
@@ -71,7 +67,7 @@ void loop() {
 
   trigger(distance);
 
-  turnMotorsOff();
+  turnMotorOff();
   
   delay(50);
 }
